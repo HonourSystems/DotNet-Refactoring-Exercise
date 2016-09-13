@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="RefactorDemo.ScoringButtonPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid Grid.Column="1" Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnScoreZero" Grid.ColumnSpan="1" Content="Zero" Click="btnScoreZero_Click" />
+            <Button x:Name="btnScoreOne" Grid.ColumnSpan="1" Content="One" Grid.Column="1" Click="btnScoreOne_Click" />
+            <Button x:Name="btnScoreTwo" Grid.ColumnSpan="1" Content="Two" Grid.Column="2" Click="btnScoreTwo_Click" />
+            <Button x:Name="btnScoreThree" Grid.ColumnSpan="1" Content="Three" Grid.Row="1" Click="btnScoreThree_Click" />
+            <Button x:Name="btnScoreFour" Grid.ColumnSpan="1" Content="Four" Grid.Row="1" Grid.Column="1" Click="btnScoreFour_Click" />
+            <Button x:Name="btnScoreFive" Grid.ColumnSpan="1" Content="Five" Grid.Row="1" Grid.Column="2" Click="btnScoreFive_Click" />
+            <Button x:Name="btnScoreSix" Grid.ColumnSpan="1" Content="Six" Grid.Row="2" Click="btnScoreSix_Click" />
+            <Button x:Name="btnScoreSeven" Grid.ColumnSpan="1" Content="Seven" Grid.Row="2" Grid.Column="1" Click="btnScoreSeven_Click" />
+            <Button x:Name="btnScoreEight" Grid.ColumnSpan="1" Content="Eight" Grid.Row="2" Grid.Column="2" Click="btnScoreEight_Click" />
+            <Button x:Name="btnScoreNine" Grid.ColumnSpan="1" Content="Nine" Grid.Row="3" Click="btnScoreNine_Click" />
+            <Button x:Name="btnScoreStrike" Grid.ColumnSpan="1" Content="Strike" Grid.Row="3" Grid.Column="1" Click="btnScoreStrike_Click" />
+            <Button x:Name="btnScoreSpare" Grid.ColumnSpan="1" Content="Spare" Grid.Row="3" Grid.Column="2" Click="btnScoreSpare_Click" />
+        </Grid>
+
+    </Grid>
+</UserControl>
